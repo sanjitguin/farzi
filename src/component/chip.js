@@ -4,7 +4,6 @@ import '../style/chip.css'
 
 
 const Chip = (prop) => {
-    console.log(prop);
     function getRandomColor() {
         var letters = '0123456789ABCDEF';
         var color = '#';
@@ -55,7 +54,7 @@ const Chip = (prop) => {
     };
 
     return (
-        <div class="chip">
+        <div className="chip">
             {prop.leftIcon &&  
             
                 <img id='preview' src={
@@ -69,7 +68,7 @@ const Chip = (prop) => {
             }
             
             {prop.text}
-            <span class="closebtn" onclick="this.parentElement.style.display='none'">
+            <span className="closebtn" onClick={() => this.parentElement.style.display='none'}>
             
                 {prop.rightIcon && <img src={prop.rightIcon} alt="Person" className={`rightIcon ${prop.rightIcon.class}`}  /> }
             </span>

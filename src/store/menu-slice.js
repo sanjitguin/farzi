@@ -6,7 +6,6 @@ const appMenuSlice = createSlice({
     initialState: {selectedMenu:{}, isOpen:false},
     reducers: {
         updateSelectedMenu(state, action) {
-            console.log(action);
             state.selectedMenu = action.payload;
             state.isOpen = false;
         },

@@ -22,7 +22,6 @@ const ProductDetails = (prop) => {
         setPositionIndexes((prevIndexes) => {
         const updatedIndexes = prevIndexes.map(
             (prevIndex) => {
-                console.log("handleNext "+prevIndex)
                 const x = (prevIndex + 1) % 3;
                 return x;}
         );
@@ -34,7 +33,6 @@ const ProductDetails = (prop) => {
         setPositionIndexes((prevIndexes) => {
         const updatedIndexes = prevIndexes.map(
             (prevIndex) => {
-                console.log("handleBack"+prevIndex)
                 const x = (prevIndex + 2) % 3;
                 return x;}
         );

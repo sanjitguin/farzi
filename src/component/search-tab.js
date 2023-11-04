@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 import SearchTrending from "./search-trending";
+import { SearchUIElement } from "./search-ui-element";
 
 export default function SearchTab() {
     return (
@@ -31,9 +32,9 @@ export default function SearchTab() {
                         <Tab.Pane eventKey="trending">
                             <SearchTrending />
                         </Tab.Pane>
-                        <Tab.Pane eventKey="ui-element">UI element tab content</Tab.Pane>
-                        <Tab.Pane eventKey="screen-element">Screen element tab content</Tab.Pane>
-                        <Tab.Pane eventKey="app-element">App tab content</Tab.Pane>
+                        <Tab.Pane eventKey="ui-element"><SearchUIElement /></Tab.Pane>
+                        <Tab.Pane eventKey="screen-element"><SearchUIElement /></Tab.Pane>
+                        <Tab.Pane eventKey="app-element"><SearchUIElement /></Tab.Pane>
                     </Tab.Content>
                     </Col>
                 </Row>

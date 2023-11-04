@@ -161,7 +161,7 @@ export default function SearchTrending() {
                     <div className="flex">
                         {
                             appScreenElementAData.map((item) => (
-                                <Link to={`/products/${item.id}`} onClick={() => closeAppSearchModal()} style={{textDecoration: "none"}}>
+                                <Link key={`ui-elements${item.id}`} to={`/products/${item.id}`} onClick={() => closeAppSearchModal()} style={{textDecoration: "none"}}>
                                 <Chip 
                                     leftIcon="1"
                                     text={item.shortDesc}
