@@ -1,0 +1,31 @@
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-block: 10px;
+  }
+  
+  header .site-logo {
+    color: black;
+    margin-right: auto;
+    text-transform: uppercase;
+    
+    font-size: 25px;
+  }
+  
+  .site-logo {
+    margin-left: 200px;
+    margin-top: -5px;
+    font-weight: 1000;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: #4D4D4D;
+    font-weight: 600;
+  }
+  
+  header a:hover {
+    color: #161616;
+    text-decoration: underline;
+  }

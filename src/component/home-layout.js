@@ -14,6 +14,7 @@ const HomeLayout  = () => {
     <>
       <div>
           <nav className='host-nav'>
+            {console.log("HomeLayout "+params.id)}
             <NavLink to={`/browse/${params.id}`} 
               end
               style={({ isActive }) => isActive ? activeStyles : null}> Apps</NavLink>

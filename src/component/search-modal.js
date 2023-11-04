@@ -15,7 +15,7 @@ function SearchModal() {
     useEffect(() => {
         const checkIfClickedOutside = e => {
         if (ref.current && !ref.current.contains(e.target)) {
-            dispatch(appSearchAction.closeSearchModal())
+            dispatch(appSearchAction.toggleSearchModal(false))
         }
         }
         document.addEventListener("click", checkIfClickedOutside)
@@ -36,7 +36,7 @@ function SearchModal() {
       <Modal
         show={openSearchModal}
         onHide={() => 
-          dispatch(appSearchAction.closeSearchModal())
+          dispatch(appSearchAction.toggleSearchModal(false))
         }
         // dialogClassName="modal-90w"
         size="lg"

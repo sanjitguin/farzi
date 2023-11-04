@@ -17,11 +17,11 @@ const HomeCarousel  = () => {
     <div className="home-container">
         <h1>Farzi is basically a counterfeit of everything</h1>
         <p>Some description about Farzi</p>
-        {/* <Link to="/search"> */}
-          <Button variant="primary" onClick={ () => dispatch(appSearchAction.showSearchModal()) }>
+        
+          {/* <Button variant="primary" onClick={ () => dispatch(appSearchAction.showSearchModal()) }>
           Find your Farzi
-        </Button>
-      {/* </Link> */}
+        </Button> */}
+
       
       
 

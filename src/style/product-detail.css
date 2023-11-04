@@ -50,3 +50,14 @@
     color: white;
     font-size: 1.125rem;
 }
+.absolute-fix{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.absolute-fix img {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+.justify-center{
+    justify-items: center;
+}

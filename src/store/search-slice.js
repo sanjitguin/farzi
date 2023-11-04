@@ -4,11 +4,8 @@
         name: "appSearch",
         initialState: {openSearchModal: false },
         reducers: {
-             showSearchModal(state, action) {
-                state.openSearchModal = true
-             },
-             closeSearchModal(state, action) {
-                state.openSearchModal = false
+             toggleSearchModal(state, action) {
+                state.openSearchModal = action.payload
              }
         }
     

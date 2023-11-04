@@ -2,15 +2,19 @@
 import React, { Fragment } from 'react';
 import '../style/product.css'
 import { Link } from 'react-router-dom';
+
+
 const Product  = () => {
 
     const [products, setProducts]  = React.useState([])
+
 
     React.useEffect(() => {
         fetch("/api/product")
         .then((resp) => resp.json())
         .then((data) => setProducts(data.products))
     }, [])
+ 
   
   
     const productElement = products.map( it => {
